@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-
-public class NPCBehaivor : MonoBehaviour
+public class NPCBehaivor : MonoBehaviour, IDropHandler
 {
+    public Text dialogBox;
+
+
     // "1" Viene a dejar un objeto perdido "2" Perdio un objeto "3" Esta perdido
     public enum pacientType
     {
@@ -23,14 +27,14 @@ public class NPCBehaivor : MonoBehaviour
     //public GameObject wheresLocation;
 
     //chat
-    [TextArea(3,10)]
+    [TextArea(3, 10)]
     public string chatIntro;
     [TextArea(3, 10)]
     public string chatDetail;
     [TextArea(3, 10)]
     public string chatDeny;
     [TextArea(3, 10)]
-    public string chatLostcorrect;
+    public string chatCorrect;
     [TextArea(3, 10)]
     public string chatAcceptfraud;
     [TextArea(3, 10)]
@@ -46,43 +50,44 @@ public class NPCBehaivor : MonoBehaviour
         switch (type)
         {
             case 1:
-                FoundThis(itemFound);
+                FoundThis();
                 break;
             case 2:
-                IlostThis(itemLost);
-                break;          
+                IlostThis();
+                break;
         }
     }
 
-
-    void FoundThis(GameObject item)
+    void FoundThis()
     {
-        Debug.Log(chatIntro);
+        dialogBox.text = $"{ chatIntro }";
         //StartCoroutine(Waitfornext);
     }
 
-    void IlostThis(GameObject item)
+    void IlostThis()
     {
-        Debug.Log(chatIntro);
-
+        dialogBox.text = $"{ chatDetail } {itemLost.GetComponent<Item>().itemType}";
     }
 
-   /* IEnumerator Waitfornext()
-    {
-        bool watting = true;
-
-        while (watting)
-        {
-            if () 
-            {
-                watting = false;
-            }
-        }
-    }*/
-
-    void GiveDetails() 
+    void GiveDetails()
     {
         Debug.Log(chatDetail);
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        if (eventData.pointerDrag != null)
+        {
+            if (eventData.pointerDrag.gameObject == itemLost)
+            {
+                Debug.Log(eventData.pointerDrag.gameObject);
+                dialogBox.text = $"{ chatCorrect }";
+            }
+            else
+            {
+                dialogBox.text = $"{ chatWrong }";
+            }
+        }
     }
 }
 

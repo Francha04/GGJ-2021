@@ -17,7 +17,7 @@ public class Item : MonoBehaviour
     public ITEMTYPE itemType;
     public List<string> descriptions;
 
-    private void Start()
+    private void Awake()
     {
         switch (itemType)
         {
