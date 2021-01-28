@@ -9,7 +9,7 @@ AnimatorState:
   m_PrefabAsset: {fileID: 0}
   m_Name: Fade In
   m_Speed: 1
-  m_CycleOffset: 0
+  m_CycleOffset: 1
   m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
@@ -62,13 +62,13 @@ AnimatorStateMachine:
     m_Position: {x: 369.48145, y: 52.441437, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8991229026483841309}
-    m_Position: {x: 404.48145, y: 117.44144, z: 0}
+    m_Position: {x: 550, y: 220, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_AnyStatePosition: {x: 430, y: 150, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 650, y: -210, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
