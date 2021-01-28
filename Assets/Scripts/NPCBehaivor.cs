@@ -45,7 +45,6 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
     {
         type = (int)paciente;
 
-        Debug.Log(type);
 
         switch (type)
         {
@@ -71,7 +70,7 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
 
     void GiveDetails()
     {
-        Debug.Log(chatDetail);
+
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -80,8 +79,9 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
         {
             if (eventData.pointerDrag.gameObject == itemLost)
             {
-                Debug.Log(eventData.pointerDrag.gameObject);
                 dialogBox.text = $"{ chatCorrect }";
+                Destroy(eventData.pointerDrag.gameObject);
+                Destroy(this.gameObject);
             }
             else
             {
