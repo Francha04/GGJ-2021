@@ -8,7 +8,6 @@ public class ItemOrganizer : MonoBehaviour, IDropHandler, IPointerEnterHandler,I
     public List<GameObject> listOfItemSlots;
     public bool mouseInside;
     
-
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)
@@ -20,8 +19,8 @@ public class ItemOrganizer : MonoBehaviour, IDropHandler, IPointerEnterHandler,I
                     //Establezco que va a estar ocupado por un item
                     itemslot.GetComponent<ItemSlot>().isOccupied = true;
                     //Muevo el elemento a la posicion fija del itemslot.transform
-                    eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = itemslot.GetComponent<RectTransform>().anchoredPosition;
-                    eventData.pointerDrag.GetComponent<Transform>().localScale = new Vector3(0.75f, 0.75f);
+                    eventData.pointerDrag.GetComponent<RectTransform>().position = itemslot.GetComponent<RectTransform>().position;
+                    eventData.pointerDrag.GetComponent<Transform>().localScale = new Vector3(0.5f, 0.5f);
                     //Obtener el item
                     itemslot.GetComponent<ItemSlot>().item = eventData.pointerDrag;
                     break;
@@ -31,7 +30,7 @@ public class ItemOrganizer : MonoBehaviour, IDropHandler, IPointerEnterHandler,I
     }
 
     //Por aca iria lo contrario del OnDrop, establecer en falso el itemSlot
-    public void OnExitItem(DragAndDrop dragAndDrop)
+    public void OnItemLeaveBox(DragAndDrop dragAndDrop)
     {
         foreach (var itemSlot in listOfItemSlots)
         {           

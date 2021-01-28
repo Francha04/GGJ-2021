@@ -33,12 +33,9 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
 
-        Debug.Log(eventData.position);
-        Debug.Log(itemOrganizer.transform.position);
-
         if(!itemOrganizer.mouseInside)
         {
-            itemOrganizer.OnExitItem(this);
+            itemOrganizer.OnItemLeaveBox(this);
         }
     }
 }
