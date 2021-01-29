@@ -20,11 +20,10 @@ public class GameManager : MonoBehaviour
         {
             _instance = this;
             DontDestroyOnLoad(this.gameObject);
-            
         }
         else
         {
-            Destroy(this);
+            //Destroy(this);
         }
         Canvas = FindObjectOfType<Canvas>().gameObject; //Esto se asegura de tener el Canvas de la escena en la variable Canvas;
         NPCIndex = 0;
@@ -56,11 +55,11 @@ public class GameManager : MonoBehaviour
 
     public void eventEnded()   //Este debe ser convocado por otros objetos, cuando el evento con el NPC actual haya terminado, asi despues de cierto tiempo se inicia el siguiente.
     {
-        Invoke("startNextEvent", timeBeforeFirstEvent);
+        Invoke("startNextEvent", timeBetweenEvents);
     }
     private void startNextEvent() 
     {
-        Instantiate(NPCs[NPCIndex], Canvas.transform);
+        NPCs[NPCIndex].SetActive(true);
         print("Ahora mismo deberia estar empezando el evento que involucra al NPC de indice " + NPCIndex + " en el array de GameManager");
         NPCIndex++;        
     }

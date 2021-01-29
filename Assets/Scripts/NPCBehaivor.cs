@@ -10,8 +10,8 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
     [SerializeField] Canvas canvas;
     [SerializeField] GameManager gameManager;
     [SerializeField] GameObject[] buttons;
-
     [SerializeField] string[] textoBotones; // Aca guardamos el texto de todos los botones que necesita el NPC (entre 1 y 4, segun el length que le pongamos al array)
+    [SerializeField] float timeFadeOut; // La duracion de la animacion del fade out final.
 
     // "1" Viene a dejar un objeto perdido "2" Perdio un objeto "3" Esta perdido
     public enum pacientType
@@ -48,7 +48,7 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
     void Start()
     {
         type = (int)paciente;
-
+        gameManager = FindObjectOfType<GameManager>(); // Para asegurarnos de tener un game manager cuando empezamos.
         // Se revisa el caso del paciente
         switch (type)
         {
@@ -82,19 +82,16 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
 
     void FoundThis()
     {
-<<<<<<< HEAD
-        dialogBox.text = $"{ chatIntro }";     
-=======
+   
         dialogBox.text = $"{ chatIntro }";
         GameObject cloneFound = Instantiate(itemFound);
         cloneFound.transform.SetParent(canvas.transform, false);
+        cloneFound.GetComponent<DragAndDrop>().canvas = canvas;
         cloneFound.SetActive(true);
     }
 
     void OnCollisionExit(Collision other)
     {
-        
->>>>>>> 6cd37d6a615b5cfac7fbe4380e98986603f7d5a7
     }
 
     void IlostThis()
@@ -122,6 +119,15 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
 
     }
 
+    public void InteractionFinish()  //Esto se llama cuando la interaccion finalizó.
+    {
+        print("Finish");
+        gameManager.eventEnded();
+        this.gameObject.GetComponent<Animator>().SetTrigger("InteractionOver");
+        Invoke("selfDestroy", timeFadeOut);
+    }
+    public void selfDestroy() 
+    { Destroy(this.gameObject); }
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)

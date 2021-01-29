@@ -5,16 +5,16 @@ using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    [SerializeField] Canvas canvas;
+    [SerializeField] public Canvas canvas;
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
-    [SerializeField] ItemOrganizer itemOrganizer;
+    [SerializeField] public ItemOrganizer itemOrganizer;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-
+        itemOrganizer = FindObjectOfType<ItemOrganizer>();
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
