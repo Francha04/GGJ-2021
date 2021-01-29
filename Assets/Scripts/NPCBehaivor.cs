@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class NPCBehaivor : MonoBehaviour, IDropHandler
+public class NPCBehaivor : MonoBehaviour
 {
     [SerializeField] Text dialogBox;
     [SerializeField] Canvas canvas;
@@ -110,7 +110,7 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
             gameManager._instance.amountOfErrors++;
             Invoke("InteractionFinish", timeForLastDialogue);            
         }
-        else  // Si no era correcto ni era fraude, entonces va el chatDeny.
+        else  // Si no era correcto ni era fraude, entonces va el chatWrong.
         {
             dialogBox.text = $"{ chatWrong }";
             gameManager._instance.amountOfErrors++;
@@ -160,41 +160,42 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
         Destroy(this.gameObject); 
     }
 
-    public void OnDrop(PointerEventData eventData)
-    {
-        if (eventData.pointerDrag != null)
-        {
-            if (eventData.pointerDrag.gameObject == itemLost)
-            {
+    /* public void OnDrop(PointerEventData eventData)
+     {
+         if (eventData.pointerDrag != null)
+         {
+             if (eventData.pointerDrag.gameObject == itemLost)
+             {
 
-                dialogBox.text = $"{ chatCorrect }";
+                 dialogBox.text = $"{ chatCorrect }";
 
-                Destroy(eventData.pointerDrag.gameObject);
-                Debug.Log(eventData.pointerDrag.gameObject);
+                 Destroy(eventData.pointerDrag.gameObject);
+                 Debug.Log(eventData.pointerDrag.gameObject);
 
-                dialogBox.text = $"{ chatCorrect }";
+                 dialogBox.text = $"{ chatCorrect }";
 
-                Destroy(this.gameObject);
-                //llamar animador y destruir persona
-            }
-            /*else if (eventData.pointerDrag.gameObject.value > itemLost.value)
-                {
-                    dialogBox.text = $"{chatAcceptfraud}";
-                    gameManager._instance.amountOfErrors++;
-                    Debug.Log(gameManager._instance.amountOfErrors);
-                    Destroy(eventData.pointerDrag.gameObject);
-                    Debug.Log(eventData.pointerDrag.gameObject);
-                    Destroy(this.gameObject);
-                    //llamar animador y destruir persona
-                }*/
-            else
-            {
-                dialogBox.text = $"{ chatWrong }";
-                gameManager._instance.amountOfErrors++;
-                Debug.Log(gameManager._instance.amountOfErrors);
-            }
-        }
-    }
+                 Destroy(this.gameObject);
+                 //llamar animador y destruir persona
+             }
+             /*else if (eventData.pointerDrag.gameObject.value > itemLost.value)
+                 {
+                     dialogBox.text = $"{chatAcceptfraud}";
+                     gameManager._instance.amountOfErrors++;
+                     Debug.Log(gameManager._instance.amountOfErrors);
+                     Destroy(eventData.pointerDrag.gameObject);
+                     Debug.Log(eventData.pointerDrag.gameObject);
+                     Destroy(this.gameObject);
+                     //llamar animador y destruir persona
+                 }
+             else
+             {
+                 dialogBox.text = $"{ chatWrong }";
+                 gameManager._instance.amountOfErrors++;
+                 Debug.Log(gameManager._instance.amountOfErrors);
+             }
+         }
+     }*/
+
 }
 
 
