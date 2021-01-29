@@ -61,6 +61,8 @@ public class GameManager : MonoBehaviour
     private void startNextEvent() 
     {
         Instantiate(NPCs[NPCIndex], Canvas.transform);
+        print("Ahora mismo deberia estar empezando el evento que involucra al NPC de indice " + NPCIndex + " en el array de GameManager");
+        NPCIndex++;        
     }
 
 }

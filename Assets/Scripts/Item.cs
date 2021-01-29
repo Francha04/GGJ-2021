@@ -6,6 +6,11 @@ using UnityEngine.UI;
 public class Item : MonoBehaviour
 {
     [System.Serializable]
+
+    /* Cuando instanciamos uno de estos objetos, hay que pasar la ID usando un codigo como el siguiente:
+      GameObject nuevoObjeto = Instantiate(Item);
+      nuevoObjeto.id = 1;
+     */ 
     public enum ITEMTYPE
     {
         Cellphone,

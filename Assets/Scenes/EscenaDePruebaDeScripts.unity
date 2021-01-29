@@ -282,6 +282,7 @@ MonoBehaviour:
   id: 0
   itemType: 0
   descriptions: []
+  sprites: []
 --- !u!1 &74614953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1218,10 @@ MonoBehaviour:
   _instance: {fileID: 746949368}
   amountOfErrors: 0
   playerLostTheGame: 0
+  NPCs: []
+  Canvas: {fileID: 1337430282}
+  timeBeforeFirstEvent: 5
+  timeBetweenEvents: 15
 --- !u!4 &746949369
 Transform:
   m_ObjectHideFlags: 0
@@ -2848,12 +2853,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 368525901}
   paciente: 1
-  itemFound: {fileID: 57300687}
+  itemFound: {fileID: 0}
   itemLost: {fileID: 0}
   chatIntro: Buenas tardes!
   chatDetail: "Hola perd\xED mi {itemLost.itemType}"
   chatDeny: 
-  chatLostcorrect: 
+  chatCorrect: 
   chatAcceptfraud: 
   chatWrong: 
 --- !u!114 &2093238753
