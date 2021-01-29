@@ -42,7 +42,7 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
     [TextArea(3, 10)]
     public string chatWrong;
 
-    
+
     void Start()
     {
         type = (int)paciente;
@@ -51,7 +51,7 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
         switch (type)
         {
             case 1:
-                foreach(GameObject objects in buttons)
+                foreach (GameObject objects in buttons)
                 {
                     objects.GetComponent<Button>().interactable = false;
                 }
@@ -69,9 +69,9 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
 
     void FoundThis()
     {
-<<<<<<< HEAD
-        dialogBox.text = $"{ chatIntro }";     
-=======
+
+        dialogBox.text = $"{ chatIntro }";
+
         dialogBox.text = $"{ chatIntro }";
         GameObject cloneFound = Instantiate(itemFound);
         cloneFound.transform.SetParent(canvas.transform, false);
@@ -80,8 +80,8 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
 
     void OnCollisionExit(Collision other)
     {
-        
->>>>>>> 6cd37d6a615b5cfac7fbe4380e98986603f7d5a7
+
+
     }
 
     void IlostThis()
