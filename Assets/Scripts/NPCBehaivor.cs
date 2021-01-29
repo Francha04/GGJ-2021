@@ -59,8 +59,7 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
 
     void FoundThis()
     {
-        dialogBox.text = $"{ chatIntro }";
-        //StartCoroutine(Waitfornext);
+        dialogBox.text = $"{ chatIntro }";     
     }
 
     void IlostThis()
