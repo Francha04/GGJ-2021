@@ -48,10 +48,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2643060796472848958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97134a1924ea08845840b22cf18d85b6, type: 3}
+  m_Script: {fileID: 11500000, guid: c67b0c46e1c0a694f8e85e785cf7fd2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPickedUp: 0
+  id: 0
+  itemType: 0
+  descriptions: []
 --- !u!222 &2643060796472848957
 CanvasRenderer:
   m_ObjectHideFlags: 0
