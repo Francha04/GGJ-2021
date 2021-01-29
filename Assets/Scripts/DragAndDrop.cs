@@ -5,16 +5,16 @@ using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    [SerializeField] Canvas canvas;
+    [SerializeField] public Canvas canvas;
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
-    [SerializeField] ItemOrganizer itemOrganizer;
+    [SerializeField] public ItemOrganizer itemOrganizer;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-
+        itemOrganizer = FindObjectOfType<ItemOrganizer>();
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -42,5 +42,10 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     public void OnPointerClick(PointerEventData eventData)
     {
         throw new System.NotImplementedException();
+    }
+
+    public void Immobilize() // Desabilita el drag and drop en el objeto, lo hace inamovible.
+    {
+        GetComponent<DragAndDrop>().enabled = false;
     }
 }

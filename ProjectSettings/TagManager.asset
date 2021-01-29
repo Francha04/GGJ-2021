@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - BoxCollider
+  - Objeto
+  - Persona
   layers:
   - Default
   - TransparentFX
