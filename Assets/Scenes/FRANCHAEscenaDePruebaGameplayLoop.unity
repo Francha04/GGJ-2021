@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 53716155}
   - component: {fileID: 53716154}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Button 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 53716155}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 746949368}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Boton4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &53716155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,7 +524,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Sali de aca!
+  m_Text: '...
 
 '
 --- !u!222 &112799139
@@ -523,6 +535,239 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112799136}
   m_CullTransparentMesh: 0
+--- !u!1 &243153895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243153896}
+  - component: {fileID: 243153900}
+  - component: {fileID: 243153899}
+  - component: {fileID: 243153898}
+  - component: {fileID: 243153897}
+  m_Layer: 5
+  m_Name: Persona 3 recibe celu
+  m_TagString: Persona
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &243153896
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243153895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1179461689}
+  m_Father: {fileID: 1337430286}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -82.8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &243153897
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243153895}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 049e9087d29a8b74e98799708a46125b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &243153898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243153895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc94d51867ddc54baa60e4ef7a3df7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 368525901}
+  canvas: {fileID: 1337430285}
+  gameManager: {fileID: 746949368}
+  buttons:
+  - {fileID: 351772863}
+  - {fileID: 1296102291}
+  - {fileID: 395240813}
+  - {fileID: 53716152}
+  textoBotones:
+  - No lo tengo
+  - Pedir Detalles
+  timeFadeOut: 1
+  timeForLastDialogue: 5
+  paciente: 2
+  itemFound: {fileID: 0}
+  itemLost: {fileID: 5214509413402709966, guid: 13b53b25a29583942af945ddc7c51a95, type: 3}
+  chatIntro: "Hola! Perd\xED mi celu cuando vine ayer. \xBFUstedes no lo tendr\xE1n?"
+  chatDetail: "Era un celular con la pantalla rota. Pantalla t\xE1ctil, dos botoncitos.
+    Sin funda ni nada."
+  chatDeny: Nah no puede ser.. Que estafador...
+  chatCorrect: Ese mismo. Gracias che.
+  chatAcceptfraud: "\xA1Sisi! \xA1Era ese mismo! Muchas gracias"
+  chatWrong: Nono este no era...
+--- !u!114 &243153899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243153895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f2513a8cbef997b4383a927716bade92, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &243153900
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243153895}
+  m_CullTransparentMesh: 0
+--- !u!1001 &253443537
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1337430286}
+    m_Modifications:
+    - target: {fileID: 5214509413402709960, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1337430285}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 175.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -269.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 49.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 63.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214509413402709966, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+      propertyPath: m_Name
+      value: Reloj
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
 --- !u!1 &326601890
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +993,7 @@ GameObject:
   - component: {fileID: 351772866}
   - component: {fileID: 351772865}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -812,11 +1057,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 351772866}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 746949368}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Boton1Rechazo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &351772866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -866,6 +1123,8 @@ GameObject:
   - component: {fileID: 368525900}
   - component: {fileID: 368525902}
   - component: {fileID: 368525901}
+  - component: {fileID: 368525903}
+  - component: {fileID: 368525904}
   m_Layer: 5
   m_Name: DialogBox
   m_TagString: Untagged
@@ -887,10 +1146,10 @@ RectTransform:
   m_Father: {fileID: 1337430286}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185.66, y: 109.41}
-  m_SizeDelta: {x: 228.71136, y: 122.38339}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -149.89, y: 280.15}
+  m_SizeDelta: {x: 237.6101, y: 129.87009}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368525901
 MonoBehaviour:
@@ -914,7 +1173,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 7
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
@@ -922,8 +1181,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
 --- !u!222 &368525902
@@ -934,6 +1193,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368525899}
   m_CullTransparentMesh: 0
+--- !u!95 &368525903
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368525899}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ac63f861ba4fa44881fcd204e92e4f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &368525904
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368525899}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &395240813
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +1237,7 @@ GameObject:
   - component: {fileID: 395240816}
   - component: {fileID: 395240815}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Button 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1011,11 +1301,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 395240816}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 746949368}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Boton3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &395240816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1238,9 +1540,10 @@ GameObject:
   - component: {fileID: 598043816}
   - component: {fileID: 598043815}
   - component: {fileID: 598043814}
+  - component: {fileID: 598043818}
   m_Layer: 5
-  m_Name: Persona 2
-  m_TagString: Untagged
+  m_Name: Persona 2 entrega celu
+  m_TagString: Persona
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1265,21 +1568,18 @@ MonoBehaviour:
   - {fileID: 1296102291}
   - {fileID: 395240813}
   - {fileID: 53716152}
-  textoBotones:
-  - Hola
-  - Chau
-  - Dale
-  - Si
+  textoBotones: []
   timeFadeOut: 1
-  paciente: 2
-  itemFound: {fileID: 0}
+  timeForLastDialogue: 5
+  paciente: 1
+  itemFound: {fileID: 5214509413402709966, guid: 13b53b25a29583942af945ddc7c51a95, type: 3}
   itemLost: {fileID: 0}
-  chatIntro: Buenas tardes!
-  chatDetail: "Hola perd\xED mi {itemLost.itemType}"
-  chatDeny: 
-  chatCorrect: 
-  chatAcceptfraud: 
-  chatWrong: 
+  chatIntro: "Buenas tardes! Encontr\xE9 este celu."
+  chatDetail: ERROR
+  chatDeny: ERROR
+  chatCorrect: ERROR
+  chatAcceptfraud: ERROR
+  chatWrong: ERROR
 --- !u!114 &598043815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1331,13 +1631,32 @@ RectTransform:
   m_Children:
   - {fileID: 1832466029}
   m_Father: {fileID: 1337430286}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 105.2}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -82.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &598043818
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598043813}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 049e9087d29a8b74e98799708a46125b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &746949367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,9 +1692,15 @@ MonoBehaviour:
   NPCs:
   - {fileID: 2093238750}
   - {fileID: 598043813}
+  - {fileID: 243153895}
   Canvas: {fileID: 1337430282}
+  botones:
+  - {fileID: 351772863}
+  - {fileID: 1296102291}
+  - {fileID: 395240813}
+  - {fileID: 53716152}
   timeBeforeFirstEvent: 5
-  timeBetweenEvents: 15
+  timeBetweenEvents: 8
 --- !u!4 &746949369
 Transform:
   m_ObjectHideFlags: 0
@@ -1390,6 +1715,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &750523320 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5214509413402709965, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+  m_PrefabInstance: {fileID: 253443537}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &791154704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,6 +2119,81 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!1 &1179461688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1179461689}
+  - component: {fileID: 1179461691}
+  - component: {fileID: 1179461690}
+  m_Layer: 5
+  m_Name: "Collider Recepci\xF3n"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1179461689
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179461688}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 243153896}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.84000003}
+  m_AnchoredPosition: {x: 0, y: -46.6}
+  m_SizeDelta: {x: 100, y: 66}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1179461690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179461688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444c2510f8ac8d343945049357ab3c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1179461691
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179461688}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 219.61874, y: 172.54654}
+  m_EdgeRadius: 0
 --- !u!1 &1276158686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,8 +2239,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -104, y: 104}
-  m_SizeDelta: {x: 208, y: 208}
+  m_AnchoredPosition: {x: -104, y: 102.22}
+  m_SizeDelta: {x: 208, y: 204.4339}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276158688
 MonoBehaviour:
@@ -2062,7 +2467,7 @@ GameObject:
   - component: {fileID: 1296102294}
   - component: {fileID: 1296102293}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2126,11 +2531,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1296102294}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 746949368}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Boton2Detalles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1296102294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2262,8 +2679,10 @@ RectTransform:
   - {fileID: 473656398}
   - {fileID: 1276158687}
   - {fileID: 368525900}
+  - {fileID: 750523320}
   - {fileID: 2093238751}
   - {fileID: 598043817}
+  - {fileID: 243153896}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2425,7 +2844,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'No lo tengo!
+  m_Text: '...
 
 '
 --- !u!222 &1502235054
@@ -2448,7 +2867,7 @@ GameObject:
   - component: {fileID: 1502290880}
   - component: {fileID: 1502290881}
   m_Layer: 5
-  m_Name: Collider Entrega
+  m_Name: "Collider Recepci\xF3n"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2470,7 +2889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -96.2}
+  m_AnchoredPosition: {x: 0, y: 18.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1502290880
@@ -2486,7 +2905,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.44503, y: -19.846497}
+  m_Offset: {x: -0.6496811, y: -30.961456}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2497,7 +2916,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 126.26982, y: 103.65088}
+  m_Size: {x: 141.45122, y: 125.8808}
   m_EdgeRadius: 0
 --- !u!114 &1502290881
 MonoBehaviour:
@@ -2508,7 +2927,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1502290878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a7782b9a34bbc745817fc0b11dfccf3, type: 3}
+  m_Script: {fileID: 11500000, guid: 444c2510f8ac8d343945049357ab3c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1561436844
@@ -2581,7 +3000,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Si lo tengo!
+  m_Text: ...
 --- !u!222 &1561436847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2756,9 +3175,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -96.2}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMax: {x: 0.5, y: 0.84000003}
+  m_AnchoredPosition: {x: 0, y: -46.6}
+  m_SizeDelta: {x: 100, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1832466030
 MonoBehaviour:
@@ -2785,7 +3204,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.44503, y: -19.846497}
+  m_Offset: {x: -2.0220184, y: 6.792862}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2796,7 +3215,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 126.26982, y: 103.65088}
+  m_Size: {x: 219.61874, y: 172.54654}
   m_EdgeRadius: 0
 --- !u!1 &1861577216
 GameObject:
@@ -2976,8 +3395,8 @@ GameObject:
   - component: {fileID: 2093238755}
   - component: {fileID: 2093238756}
   m_Layer: 5
-  m_Name: Persona
-  m_TagString: Untagged
+  m_Name: Persona 1 (Vieja-Pedir Reloj)
+  m_TagString: Persona
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2995,11 +3414,11 @@ RectTransform:
   m_Children:
   - {fileID: 1502290879}
   m_Father: {fileID: 1337430286}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 106}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -82}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2093238752
@@ -3021,20 +3440,24 @@ MonoBehaviour:
   - {fileID: 351772863}
   - {fileID: 1296102291}
   - {fileID: 395240813}
+  - {fileID: 53716152}
   textoBotones:
-  - Hola
-  - ' 2'
-  - 4
-  timeFadeOut: 1
-  paciente: 1
-  itemFound: {fileID: 5214509413402709966, guid: 13b53b25a29583942af945ddc7c51a95, type: 3}
-  itemLost: {fileID: 0}
-  chatIntro: Buenas tardes!
-  chatDetail: "Hola perd\xED mi {itemLost.itemType}"
-  chatDeny: "No, esto no\t\t"
-  chatCorrect: "Dale, esto s\xED"
-  chatAcceptfraud: Uh me viene clave
-  chatWrong: "Le erraste p\xE1"
+  - '"No lo tengo"'
+  - Pedir detalles
+  timeFadeOut: 1.5
+  timeForLastDialogue: 5
+  paciente: 2
+  itemFound: {fileID: 0}
+  itemLost: {fileID: 5214509413402709966, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+  chatIntro: "Hola joven, le dej\xE9 a su compa\xF1era un reloj, puede ser que le
+    haya dicho algo, \xBFser\xEDa tan amable de darmelo?"
+  chatDetail: "Es un relojcito antiguo, anal\xF3gico. Ni siquiera anda, pero es una
+    reliquia familiar que siempre traigo conmigo."
+  chatDeny: "\xBFC\xF3mo que no? Pero s\xED estoy segura que lo dej\xE9 ac\xE1. \xA1Me
+    est\xE1n estafando! Ya mismo estoy presentando una queja, joven..."
+  chatCorrect: "Much\xEDsimas gracias, querido, disculpa las molest\xEDas."
+  chatAcceptfraud: ESTE PERSONAJE NO TIENE FRAUDE. HAY UN SOLO RELOJ.
+  chatWrong: "Este no es mi reloj. Cualquier cosa hacen ac\xE1. Ya vas a ver desubicado."
 --- !u!114 &2093238753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3055,7 +3478,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8a43eb0e079e1314daa719b3e528f579, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d176581b434488f47b37041edeb29784, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

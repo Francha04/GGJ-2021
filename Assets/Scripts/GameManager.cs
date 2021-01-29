@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,9 +11,11 @@ public class GameManager : MonoBehaviour
     public bool playerLostTheGame;
     public GameObject[] NPCs;
     public GameObject Canvas;
+    public GameObject[] botones; //Esto debe contener una referencia para los 4 botones.
     public float timeBeforeFirstEvent;
     public float timeBetweenEvents;
     private int NPCIndex;
+    
     
     private void Awake()
     {
@@ -57,11 +60,26 @@ public class GameManager : MonoBehaviour
     {
         Invoke("startNextEvent", timeBetweenEvents);
     }
+
+    public void Boton1Rechazo() // Este es el metodo para el primer boton de los 4, que siempre va a corresponder con el "No lo tengo".
+    {
+        NPCs[NPCIndex - 1].GetComponent<NPCBehaivor>().Noitemfound();
+    }
+    public void Boton2Detalles() //Este es el metodo para el segundo boton de los 4, que siempre va a corresponder con el "Pedir detalles
+    {
+        NPCs[NPCIndex - 1].GetComponent<NPCBehaivor>().AskForDetails();
+    }
+    public void Boton3() //Este es el metodo para el tercer boton de los 4, que todavia no hemos definido para qué se va a usar
+    { 
+    }
+    public void Boton4() //Este es el metodo para el cuarto boton de los 4, que todavia no hemos definido para qué se va a usar
+    { 
+    }
     private void startNextEvent() 
     {
         NPCs[NPCIndex].SetActive(true);
         print("Ahora mismo deberia estar empezando el evento que involucra al NPC de indice " + NPCIndex + " en el array de GameManager");
         NPCIndex++;        
-    }
+    }   
 
 }

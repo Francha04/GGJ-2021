@@ -43,4 +43,9 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     {
         throw new System.NotImplementedException();
     }
+
+    public void Immobilize() // Desabilita el drag and drop en el objeto, lo hace inamovible.
+    {
+        GetComponent<DragAndDrop>().enabled = false;
+    }
 }

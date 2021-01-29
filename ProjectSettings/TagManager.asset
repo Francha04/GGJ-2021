@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BoxCollider
   - Objeto
+  - Persona
   layers:
   - Default
   - TransparentFX

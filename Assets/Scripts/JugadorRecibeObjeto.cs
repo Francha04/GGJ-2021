@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class JugadorRecibeObjeto : MonoBehaviour
 {
+    // Este script debe estar en un children del gameobject persona. Solo si la persona va a ENTREGARLE un objeto al jugador. El children que lo contenga debe tener un box collider 2D marcado como trigger.
     int IDOfItem;
     private void Awake()
     {
@@ -15,8 +16,7 @@ public class JugadorRecibeObjeto : MonoBehaviour
         {
             GetComponentInParent<NPCBehaivor>().InteractionFinish();
             print("Objeto se fue");
-            this.gameObject.SetActive(false);
-            
+            this.gameObject.SetActive(false);            
         }
     }
 }
