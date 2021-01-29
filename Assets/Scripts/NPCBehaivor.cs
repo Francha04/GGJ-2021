@@ -6,8 +6,10 @@ using UnityEngine.EventSystems;
 
 public class NPCBehaivor : MonoBehaviour, IDropHandler
 {
-    public Text dialogBox;
-
+    [SerializeField] Text dialogBox;
+    [SerializeField] Canvas canvas;
+    [SerializeField] GameManager gameManager;
+    [SerializeField] GameObject[] buttons;
 
     // "1" Viene a dejar un objeto perdido "2" Perdio un objeto "3" Esta perdido
     public enum pacientType
@@ -40,18 +42,26 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
     [TextArea(3, 10)]
     public string chatWrong;
 
-    // Se revisa el caso del paciente
+    
     void Start()
     {
         type = (int)paciente;
 
-
+        // Se revisa el caso del paciente
         switch (type)
         {
             case 1:
+                foreach(GameObject objects in buttons)
+                {
+                    objects.GetComponent<Button>().interactable = false;
+                }
                 FoundThis();
                 break;
             case 2:
+                foreach (GameObject objects in buttons)
+                {
+                    objects.GetComponent<Button>().interactable = true;
+                }
                 IlostThis();
                 break;
         }
@@ -60,16 +70,38 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
     void FoundThis()
     {
         dialogBox.text = $"{ chatIntro }";
-        //StartCoroutine(Waitfornext);
+        GameObject cloneFound = Instantiate(itemFound);
+        cloneFound.transform.SetParent(canvas.transform, false);
+        cloneFound.SetActive(true);
+    }
+
+    void OnCollisionExit(Collision other)
+    {
+        
     }
 
     void IlostThis()
     {
-        dialogBox.text = $"{ chatDetail } {itemLost.GetComponent<Item>().itemType}";
+        dialogBox.text = $"{ chatIntro }";
     }
 
-    void GiveDetails()
+    public void AskForDetails()
     {
+        dialogBox.text = $"{ chatDetail }";
+    }
+
+    public void Noitemfound()
+    {
+
+        dialogBox.text = $"{ chatDeny }";
+        if (itemLost != null)
+        {
+            gameManager._instance.amountOfErrors++;
+            Debug.Log(gameManager._instance.amountOfErrors);
+        }
+
+        //llamar animador y destruir persona
+        Destroy(this.gameObject);
 
     }
 
@@ -79,15 +111,38 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
         {
             if (eventData.pointerDrag.gameObject == itemLost)
             {
+
                 dialogBox.text = $"{ chatCorrect }";
+
                 Destroy(eventData.pointerDrag.gameObject);
+                Debug.Log(eventData.pointerDrag.gameObject);
+
+                dialogBox.text = $"{ chatCorrect }";
+
                 Destroy(this.gameObject);
+                //llamar animador y destruir persona
             }
+            /*else if (eventData.pointerDrag.gameObject.value > itemLost.value)
+                {
+                    dialogBox.text = $"{chatAcceptfraud}";
+                    gameManager._instance.amountOfErrors++;
+                    Debug.Log(gameManager._instance.amountOfErrors);
+                    Destroy(eventData.pointerDrag.gameObject);
+                    Debug.Log(eventData.pointerDrag.gameObject);
+                    Destroy(this.gameObject);
+                    //llamar animador y destruir persona
+                }*/
             else
             {
                 dialogBox.text = $"{ chatWrong }";
+                gameManager._instance.amountOfErrors++;
+                Debug.Log(gameManager._instance.amountOfErrors);
             }
         }
     }
 }
+
+
+
+
 
