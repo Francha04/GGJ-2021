@@ -82,6 +82,9 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
 
     void FoundThis()
     {
+<<<<<<< HEAD
+        dialogBox.text = $"{ chatIntro }";     
+=======
         dialogBox.text = $"{ chatIntro }";
         GameObject cloneFound = Instantiate(itemFound);
         cloneFound.transform.SetParent(canvas.transform, false);
@@ -91,6 +94,7 @@ public class NPCBehaivor : MonoBehaviour, IDropHandler
     void OnCollisionExit(Collision other)
     {
         
+>>>>>>> 6cd37d6a615b5cfac7fbe4380e98986603f7d5a7
     }
 
     void IlostThis()
