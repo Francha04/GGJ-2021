@@ -22,10 +22,6 @@ public class Item : MonoBehaviour
     public int id;
     public ITEMTYPE itemType;
     public List<string> descriptions;
-<<<<<<< HEAD:Assets/Scripts/Item.cs
-
-=======
->>>>>>> 6e6627368c2d59bd3283c1544553a455737c57a7:Assets/Scripts/zItemOBSOLETO.cs
     public List<Sprite> sprites; // Aca guardamos los sprites de los diferentes objetos, segun id.
     private void Awake()
     {
@@ -103,8 +99,4 @@ public class Item : MonoBehaviour
             descriptions.Add("Las llaves de un auto.");
         }
     }
-<<<<<<< HEAD:Assets/Scripts/Item.cs
-
-=======
->>>>>>> 6e6627368c2d59bd3283c1544553a455737c57a7:Assets/Scripts/zItemOBSOLETO.cs
 }

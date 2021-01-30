@@ -613,6 +613,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112799136}
   m_CullTransparentMesh: 0
+--- !u!1 &214129780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214129781}
+  - component: {fileID: 214129783}
+  - component: {fileID: 214129782}
+  m_Layer: 5
+  m_Name: Collider Entrega (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &214129781
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214129780}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1308112758}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.84000003}
+  m_AnchoredPosition: {x: 0, y: -46.6}
+  m_SizeDelta: {x: 100, y: 66}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &214129782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214129780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 356d8f283cffe694fae0c7a93c4765ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &214129783
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214129780}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 219.61874, y: 172.54654}
+  m_EdgeRadius: 0
 --- !u!1 &235627386
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +779,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 59602688}
+  - {fileID: 341573913}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -726,7 +802,7 @@ GameObject:
   - component: {fileID: 243153898}
   - component: {fileID: 243153897}
   m_Layer: 5
-  m_Name: Persona 3 recibe celu
+  m_Name: Persona 4 recibe celu
   m_TagString: Persona
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -745,7 +821,7 @@ RectTransform:
   m_Children:
   - {fileID: 1179461689}
   m_Father: {fileID: 1337430286}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1023,6 +1099,103 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326601890}
+  m_CullTransparentMesh: 0
+--- !u!1 &341573912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 341573913}
+  - component: {fileID: 341573916}
+  - component: {fileID: 341573915}
+  - component: {fileID: 341573914}
+  m_Layer: 5
+  m_Name: Libro de Quejas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &341573913
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341573912}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 235627390}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 403, y: -21}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &341573914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341573912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113e163cfd5fff940950dd5cff232189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  estados:
+  - {fileID: 21300000, guid: ffd1d7fcd07d1964dadd696f27021429, type: 3}
+  - {fileID: 21300000, guid: d176581b434488f47b37041edeb29784, type: 3}
+  - {fileID: 21300000, guid: 8a43eb0e079e1314daa719b3e528f579, type: 3}
+  - {fileID: 21300000, guid: f2513a8cbef997b4383a927716bade92, type: 3}
+  - {fileID: 0}
+  minTimeBeforeComplain: 6
+  maxTimeBeforeComplain: 8
+  errores: 0
+--- !u!114 &341573915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341573912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ffd1d7fcd07d1964dadd696f27021429, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &341573916
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341573912}
   m_CullTransparentMesh: 0
 --- !u!1 &350292781
 GameObject:
@@ -1325,8 +1498,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -149.89, y: 280.15}
-  m_SizeDelta: {x: 237.6101, y: 129.87009}
+  m_AnchoredPosition: {x: -258.3, y: 553.9}
+  m_SizeDelta: {x: 261.06598, y: 223.69357}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368525901
 MonoBehaviour:
@@ -1794,7 +1967,7 @@ GameObject:
   - component: {fileID: 598043814}
   - component: {fileID: 598043818}
   m_Layer: 5
-  m_Name: Persona 2 entrega celu
+  m_Name: Persona 3 entrega celu
   m_TagString: Persona
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1883,7 +2056,7 @@ RectTransform:
   m_Children:
   - {fileID: 1832466029}
   m_Father: {fileID: 1337430286}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1942,6 +2115,7 @@ MonoBehaviour:
   amountOfErrors: 0
   playerLostTheGame: 0
   NPCs:
+  - {fileID: 1308112757}
   - {fileID: 2093238750}
   - {fileID: 598043813}
   - {fileID: 243153895}
@@ -1953,6 +2127,7 @@ MonoBehaviour:
   - {fileID: 53716152}
   timeBeforeFirstEvent: 5
   timeBetweenEvents: 8
+  libroDeQuejas: {fileID: 341573914}
 --- !u!4 &746949369
 Transform:
   m_ObjectHideFlags: 0
@@ -2510,6 +2685,8 @@ MonoBehaviour:
   - {fileID: 74614953}
   - {fileID: 1164530976}
   - {fileID: 793239722}
+  - {fileID: 793239722}
+  - {fileID: 793239722}
   mouseInside: 0
 --- !u!114 &1276158689
 MonoBehaviour:
@@ -2838,6 +3015,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296102291}
   m_CullTransparentMesh: 0
+--- !u!1 &1308112757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308112758}
+  - component: {fileID: 1308112762}
+  - component: {fileID: 1308112761}
+  - component: {fileID: 1308112760}
+  - component: {fileID: 1308112759}
+  m_Layer: 5
+  m_Name: Persona 1 Hombre Limpieza
+  m_TagString: Persona
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1308112758
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308112757}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 214129781}
+  m_Father: {fileID: 1337430286}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -82.8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1308112759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308112757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 510003f41b1a68c4db639dfd46648598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 368525901}
+  canvas: {fileID: 1337430285}
+  gameManager: {fileID: 746949368}
+  buttons: []
+  textoBotones: []
+  timeFadeOut: 1.5
+  timeForLastDialogue: 5
+  paciente: 1
+  itemsFound:
+  - {fileID: 5214509413402709966, guid: 160db4c2041973c4a9eb0fda9f55dce5, type: 3}
+  - {fileID: 5214509413402709966, guid: b520e7d56c0707849bc0140249a239d9, type: 3}
+  - {fileID: 5214509413402709966, guid: 920e7244ca7e1d946b7fa341f04dab50, type: 3}
+  - {fileID: 5214509413402709966, guid: 5b84437fdb887cf4aa420b3b6d425985, type: 3}
+  - {fileID: 5214509413402709966, guid: 695bd96155f28c84cb1c98bf56dea735, type: 3}
+  itemLost: {fileID: 0}
+  chatIntro: "Que tal \xBFJorge?, te dejo algunas cosas que fui encontrando por si
+    las vienen a reclamar. Al S10 dejalo apagado que si no lo vienen a buscar en
+    unos d\xEDas lo llevo pa casa"
+  chatDetail: 
+  chatDeny: 
+  chatCorrect: 
+  chatAcceptfraud: 
+  chatWrong: 
+--- !u!95 &1308112760
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308112757}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 049e9087d29a8b74e98799708a46125b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1308112761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308112757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f2513a8cbef997b4383a927716bade92, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1308112762
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308112757}
+  m_CullTransparentMesh: 0
 --- !u!1 &1320520171
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,6 +3316,7 @@ RectTransform:
   - {fileID: 1276158687}
   - {fileID: 368525900}
   - {fileID: 750523320}
+  - {fileID: 1308112758}
   - {fileID: 2093238751}
   - {fileID: 598043817}
   - {fileID: 243153896}
@@ -3797,7 +4107,7 @@ GameObject:
   - component: {fileID: 2093238755}
   - component: {fileID: 2093238756}
   m_Layer: 5
-  m_Name: Persona 1 (Vieja-Pedir Reloj)
+  m_Name: Persona 2 (Vieja-Pedir Reloj)
   m_TagString: Persona
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3816,11 +4126,11 @@ RectTransform:
   m_Children:
   - {fileID: 1502290879}
   m_Father: {fileID: 1337430286}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -82}
+  m_AnchoredPosition: {x: 0, y: -84}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2093238752
