@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 62, y: 73.5}
+  m_AnchoredPosition: {x: 62, y: 52}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &53716154
@@ -613,7 +613,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112799136}
   m_CullTransparentMesh: 0
---- !u!1 &214129780
+--- !u!1 &185857591
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -621,73 +621,263 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 214129781}
-  - component: {fileID: 214129783}
-  - component: {fileID: 214129782}
+  - component: {fileID: 185857592}
+  - component: {fileID: 185857596}
+  - component: {fileID: 185857595}
+  - component: {fileID: 185857594}
+  - component: {fileID: 185857593}
   m_Layer: 5
-  m_Name: Collider Entrega (1)
-  m_TagString: Untagged
+  m_Name: Persona 5 Piba chorra
+  m_TagString: Persona
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &214129781
+  m_IsActive: 0
+--- !u!224 &185857592
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214129780}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 185857591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1308112758}
-  m_RootOrder: 0
+  m_LocalScale: {x: 2.1612499, y: 1.9445313, z: 1}
+  m_Children:
+  - {fileID: 1930283549}
+  m_Father: {fileID: 1337430286}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.84000003}
-  m_AnchoredPosition: {x: 0, y: -46.6}
-  m_SizeDelta: {x: 100, y: 66}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 2.348, y: -262.8}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &214129782
+--- !u!95 &185857593
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185857591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 049e9087d29a8b74e98799708a46125b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &185857594
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214129780}
+  m_GameObject: {fileID: 185857591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 356d8f283cffe694fae0c7a93c4765ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bc94d51867ddc54baa60e4ef7a3df7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &214129783
-BoxCollider2D:
+  dialogBox: {fileID: 368525901}
+  canvas: {fileID: 1337430285}
+  gameManager: {fileID: 746949368}
+  buttons:
+  - {fileID: 351772863}
+  - {fileID: 1296102291}
+  - {fileID: 395240813}
+  - {fileID: 53716152}
+  textoBotones:
+  - No lo tengo
+  - Pedir Detalles
+  timeFadeOut: 1
+  timeForLastDialogue: 5
+  paciente: 2
+  itemFound: {fileID: 0}
+  itemLost: {fileID: 5214509413402709966, guid: 13b53b25a29583942af945ddc7c51a95, type: 3}
+  chatIntro: "Hola\u2026 estoy buscando una billetera, \xBFpuede ser que est\xE9
+    ac\xE1?"
+  chatDetail: "Es que no es m\xEDa\u2026 es de mi hermano. Carlos se llama... Ehh
+    Pedro, Pedro quise decir\u2026"
+  chatDeny: Cagate, ortiba
+  chatCorrect: "\xA1Gracias!"
+  chatAcceptfraud: Sisi era esa, esa misma, exactamente igual. Muchas gracias che.
+  chatWrong: Bueno no es una billetera pero me re sirve.
+--- !u!114 &185857595
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214129780}
+  m_GameObject: {fileID: 185857591}
   m_Enabled: 1
-  m_Density: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2.0220184, y: 6.792862}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 219.61874, y: 172.54654}
-  m_EdgeRadius: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 136b67942b92ec04caf6b8bd2b3339d5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &185857596
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185857591}
+  m_CullTransparentMesh: 0
+--- !u!1 &215079327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215079328}
+  - component: {fileID: 215079332}
+  - component: {fileID: 215079331}
+  - component: {fileID: 215079330}
+  - component: {fileID: 215079329}
+  m_Layer: 5
+  m_Name: "Persona 7 Muchacho 20 a\xF1os"
+  m_TagString: Persona
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &215079328
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215079327}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.1612499, y: 1.9445313, z: 1}
+  m_Children:
+  - {fileID: 471252133}
+  m_Father: {fileID: 1337430286}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 2.348, y: -262.8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &215079329
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215079327}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 049e9087d29a8b74e98799708a46125b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &215079330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215079327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc94d51867ddc54baa60e4ef7a3df7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 368525901}
+  canvas: {fileID: 1337430285}
+  gameManager: {fileID: 746949368}
+  buttons:
+  - {fileID: 351772863}
+  - {fileID: 1296102291}
+  - {fileID: 395240813}
+  - {fileID: 53716152}
+  textoBotones:
+  - No lo tengo
+  - Pedir Detalles
+  timeFadeOut: 1
+  timeForLastDialogue: 5
+  paciente: 2
+  itemFound: {fileID: 0}
+  itemLost: {fileID: 5214509413402709966, guid: 5b84437fdb887cf4aa420b3b6d425985, type: 3}
+  chatIntro: "Buenos d\xEDas, estoy buscando mi billetera, creo que se me cay\xF3
+    en alg\xFAn pasillo por ac\xE1"
+  chatDetail: "Mi documento deber\xEDa est\xE1r adentro, Pedro Alvarez"
+  chatDeny: 
+  chatCorrect: 
+  chatAcceptfraud: 
+  chatWrong: 
+--- !u!114 &215079331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215079327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8a43eb0e079e1314daa719b3e528f579, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &215079332
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215079327}
+  m_CullTransparentMesh: 0
 --- !u!1 &235627386
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,7 +992,7 @@ GameObject:
   - component: {fileID: 243153898}
   - component: {fileID: 243153897}
   m_Layer: 5
-  m_Name: Persona 4 recibe celu
+  m_Name: Persona 4 Anciano
   m_TagString: Persona
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -817,7 +1007,7 @@ RectTransform:
   m_GameObject: {fileID: 243153895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.1612499, y: 1.9445313, z: 1}
   m_Children:
   - {fileID: 1179461689}
   m_Father: {fileID: 1337430286}
@@ -825,7 +1015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -82.8}
+  m_AnchoredPosition: {x: 2.348, y: -262.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &243153897
@@ -874,14 +1064,14 @@ MonoBehaviour:
   timeForLastDialogue: 5
   paciente: 2
   itemFound: {fileID: 0}
-  itemLost: {fileID: 5214509413402709966, guid: 13b53b25a29583942af945ddc7c51a95, type: 3}
-  chatIntro: "Hola! Perd\xED mi celu cuando vine ayer. \xBFUstedes no lo tendr\xE1n?"
-  chatDetail: "Era un celular con la pantalla rota. Pantalla t\xE1ctil, dos botoncitos.
-    Sin funda ni nada."
-  chatDeny: Nah no puede ser.. Que estafador...
-  chatCorrect: Ese mismo. Gracias che.
-  chatAcceptfraud: "\xA1Sisi! \xA1Era ese mismo! Muchas gracias"
-  chatWrong: Nono esto no es mi celu flaco...
+  itemLost: {fileID: 5214509413402709966, guid: 160db4c2041973c4a9eb0fda9f55dce5, type: 3}
+  chatIntro: "Buenos d\xEDas querido, \xBFpuede ser que me haya olvidado el celular
+    ac\xE1?"
+  chatDetail: Es uno viejito, de los que sirven para llamar.
+  chatDeny: Pero que pesimo servicio, ya van a ver.
+  chatCorrect: Muchas gracias.
+  chatAcceptfraud: "\xA1Sisi! \xA1Era ese mismo! \xA1Muchas gracias!"
+  chatWrong: "Pero esto no es lo que te ped\xED... ya van a ver..."
 --- !u!114 &243153899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1021,6 +1211,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cad2c03b5042ef741b476adf6143f9ff, type: 3}
+--- !u!1 &321587146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321587147}
+  - component: {fileID: 321587149}
+  - component: {fileID: 321587148}
+  m_Layer: 5
+  m_Name: "Collider Recepci\xF3n"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &321587147
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321587146}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1257974293}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.84000003}
+  m_AnchoredPosition: {x: 0, y: -46.6}
+  m_SizeDelta: {x: 100, y: 66}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &321587148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321587146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444c2510f8ac8d343945049357ab3c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &321587149
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321587146}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 219.61874, y: 172.54654}
+  m_EdgeRadius: 0
 --- !u!1 &326601890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,7 +1631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 62, y: 173.5}
+  m_AnchoredPosition: {x: 62, y: 152}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &351772865
@@ -1610,7 +1875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 62, y: 105.7}
+  m_AnchoredPosition: {x: 62, y: 84.2}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395240815
@@ -1914,6 +2179,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449132083}
   m_CullTransparentMesh: 0
+--- !u!1 &471252132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471252133}
+  - component: {fileID: 471252135}
+  - component: {fileID: 471252134}
+  m_Layer: 5
+  m_Name: "Collider Recepci\xF3n"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &471252133
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471252132}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 215079328}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.84000003}
+  m_AnchoredPosition: {x: 0, y: -46.6}
+  m_SizeDelta: {x: 100, y: 66}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &471252134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471252132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444c2510f8ac8d343945049357ab3c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &471252135
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471252132}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 219.61874, y: 172.54654}
+  m_EdgeRadius: 0
 --- !u!1 &473656397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,7 +2307,7 @@ GameObject:
   - component: {fileID: 598043814}
   - component: {fileID: 598043818}
   m_Layer: 5
-  m_Name: Persona 3 entrega celu
+  m_Name: Persona 3 Adolescente idiota
   m_TagString: Persona
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1996,15 +2336,17 @@ MonoBehaviour:
   textoBotones: []
   timeFadeOut: 1
   timeForLastDialogue: 5
-  paciente: 1
-  itemFound: {fileID: 5214509413402709966, guid: 13b53b25a29583942af945ddc7c51a95, type: 3}
-  itemLost: {fileID: 0}
-  chatIntro: "Buenas tardes! Encontr\xE9 este celu."
-  chatDetail: ERROR
-  chatDeny: ERROR
-  chatCorrect: ERROR
+  paciente: 2
+  itemFound: {fileID: 0}
+  itemLost: {fileID: 5214509413402709966, guid: 920e7244ca7e1d946b7fa341f04dab50, type: 3}
+  chatIntro: "Que onda\u2026 che me parece que dej\xE9 las llaves de mi vieja ac\xE1
+    jajaja, \xBFpuede ser que la tengan ustedes?\t"
+  chatDetail: Son unas llaves de un autito. Onda un llavero con una sola llave. Fijate
+    bien.
+  chatDeny: Bue, la debo haber dejado en otro lado, o me la cagaron afanando...
+  chatCorrect: Uhh gracias wachin, me salvaste la vida.
   chatAcceptfraud: ERROR
-  chatWrong: ERROR
+  chatWrong: "No flaco... cualquier cosa me est\xE1s dando... Dej\xE1..."
 --- !u!114 &598043815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2025,7 +2367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f2513a8cbef997b4383a927716bade92, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e10efac9666268940b35c983596b6f15, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2052,7 +2394,7 @@ RectTransform:
   m_GameObject: {fileID: 598043813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.1612499, y: 1.9445313, z: 1}
   m_Children:
   - {fileID: 1832466029}
   m_Father: {fileID: 1337430286}
@@ -2060,7 +2402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -82.8}
+  m_AnchoredPosition: {x: 2.348, y: -262.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &598043818
@@ -2413,6 +2755,139 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!1 &1017941973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1017941974}
+  - component: {fileID: 1017941978}
+  - component: {fileID: 1017941977}
+  - component: {fileID: 1017941976}
+  - component: {fileID: 1017941975}
+  m_Layer: 5
+  m_Name: Persona 6 Banquero insoportable
+  m_TagString: Persona
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1017941974
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017941973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.1612499, y: 1.9445313, z: 1}
+  m_Children:
+  - {fileID: 1793547970}
+  m_Father: {fileID: 1337430286}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 2.348, y: -262.8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1017941975
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017941973}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 049e9087d29a8b74e98799708a46125b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1017941976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017941973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc94d51867ddc54baa60e4ef7a3df7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 368525901}
+  canvas: {fileID: 1337430285}
+  gameManager: {fileID: 746949368}
+  buttons:
+  - {fileID: 351772863}
+  - {fileID: 1296102291}
+  - {fileID: 395240813}
+  - {fileID: 53716152}
+  textoBotones:
+  - No lo tengo
+  - Pedir Detalles
+  timeFadeOut: 1
+  timeForLastDialogue: 5
+  paciente: 2
+  itemFound: {fileID: 0}
+  itemLost: {fileID: 5214509413402709966, guid: b520e7d56c0707849bc0140249a239d9, type: 3}
+  chatIntro: "Flaco, est\xE1 mi celu ac\xE1, pasamelo."
+  chatDetail: "Un S10 es, fijate en la caja, si no est\xE1 me lo afan\xF3 el de limpieza
+    seguro"
+  chatDeny: "\xBFDe verdad me est\xE1s diciendo? Les va a caber una denuncia."
+  chatCorrect: Gracias pibe.
+  chatAcceptfraud: "\xA1ERROR!  (no hay mejor celular)"
+  chatWrong: "No te la puedo creer, cualquier cosa me est\xE1s dando flaco. Les va
+    a caber una denuncia."
+--- !u!114 &1017941977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017941973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f8a720487c8a30e4e8be78a83cc05666, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1017941978
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017941973}
+  m_CullTransparentMesh: 0
 --- !u!1 &1164530976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2621,6 +3096,138 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 219.61874, y: 172.54654}
   m_EdgeRadius: 0
+--- !u!1 &1257974292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1257974293}
+  - component: {fileID: 1257974297}
+  - component: {fileID: 1257974296}
+  - component: {fileID: 1257974295}
+  - component: {fileID: 1257974294}
+  m_Layer: 5
+  m_Name: "Persona 8 Mujer 30 a\xF1os"
+  m_TagString: Persona
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1257974293
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257974292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.1612499, y: 1.9445313, z: 1}
+  m_Children:
+  - {fileID: 321587147}
+  m_Father: {fileID: 1337430286}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 2.348, y: -262.8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1257974294
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257974292}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 049e9087d29a8b74e98799708a46125b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1257974295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257974292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc94d51867ddc54baa60e4ef7a3df7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 368525901}
+  canvas: {fileID: 1337430285}
+  gameManager: {fileID: 746949368}
+  buttons:
+  - {fileID: 351772863}
+  - {fileID: 1296102291}
+  - {fileID: 395240813}
+  - {fileID: 53716152}
+  textoBotones:
+  - No lo tengo
+  - Pedir Detalles
+  timeFadeOut: 1
+  timeForLastDialogue: 5
+  paciente: 2
+  itemFound: {fileID: 0}
+  itemLost: {fileID: 5214509413402709966, guid: 458c8a3e164210d4d9e25a918f94578c, type: 3}
+  chatIntro: "Hola que tal\u2026 si, me olvid\xE9 unas pastillas\u2026 ahh esas de
+    ah\xED, \xBFme las alcanzas?"
+  chatDetail: "Por supuesto que son m\xEDas, \xBFsino para que vine?"
+  chatDeny: "Bueno\u2026 tal vez sean otras las que perd\xED\u2026"
+  chatCorrect: "\xA1Gracias!"
+  chatAcceptfraud: "ERROR.\t"
+  chatWrong: Pero esto no son pastillas...
+--- !u!114 &1257974296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257974292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 83b8ff07aa5310b4691727540dda83eb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1257974297
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257974292}
+  m_CullTransparentMesh: 0
 --- !u!1 &1276158686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,7 +3526,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 62, y: 139.1}
+  m_AnchoredPosition: {x: 62, y: 117.600006}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296102293
@@ -3044,15 +3651,14 @@ RectTransform:
   m_GameObject: {fileID: 1308112757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 214129781}
+  m_LocalScale: {x: 2.1612499, y: 1.9445313, z: 1}
+  m_Children: []
   m_Father: {fileID: 1337430286}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -82.8}
+  m_AnchoredPosition: {x: 2.348, y: -262.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1308112759
@@ -3081,6 +3687,8 @@ MonoBehaviour:
   - {fileID: 5214509413402709966, guid: 920e7244ca7e1d946b7fa341f04dab50, type: 3}
   - {fileID: 5214509413402709966, guid: 5b84437fdb887cf4aa420b3b6d425985, type: 3}
   - {fileID: 5214509413402709966, guid: 695bd96155f28c84cb1c98bf56dea735, type: 3}
+  - {fileID: 5214509413402709966, guid: 920e7244ca7e1d946b7fa341f04dab50, type: 3}
+  - {fileID: 5214509413402709966, guid: 458c8a3e164210d4d9e25a918f94578c, type: 3}
   itemLost: {fileID: 0}
   chatIntro: "Que tal \xBFJorge?, te dejo algunas cosas que fui encontrando por si
     las vienen a reclamar. Al S10 dejalo apagado que si no lo vienen a buscar en
@@ -3129,7 +3737,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f2513a8cbef997b4383a927716bade92, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13575393482f3c4479cc663215e10f9e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3320,6 +3928,10 @@ RectTransform:
   - {fileID: 2093238751}
   - {fileID: 598043817}
   - {fileID: 243153896}
+  - {fileID: 185857592}
+  - {fileID: 1017941974}
+  - {fileID: 215079328}
+  - {fileID: 1257974293}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3779,6 +4391,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773336841}
   m_CullTransparentMesh: 0
+--- !u!1 &1793547969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1793547970}
+  - component: {fileID: 1793547972}
+  - component: {fileID: 1793547971}
+  m_Layer: 5
+  m_Name: "Collider Recepci\xF3n"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1793547970
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793547969}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1017941974}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.84000003}
+  m_AnchoredPosition: {x: 0, y: -46.6}
+  m_SizeDelta: {x: 100, y: 66}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1793547971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793547969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444c2510f8ac8d343945049357ab3c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1793547972
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793547969}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 219.61874, y: 172.54654}
+  m_EdgeRadius: 0
 --- !u!1 &1832466028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,7 +4512,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1832466028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a7782b9a34bbc745817fc0b11dfccf3, type: 3}
+  m_Script: {fileID: 11500000, guid: 444c2510f8ac8d343945049357ab3c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1832466031
@@ -3884,6 +4571,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1930283548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1930283549}
+  - component: {fileID: 1930283551}
+  - component: {fileID: 1930283550}
+  m_Layer: 5
+  m_Name: "Collider Recepci\xF3n"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1930283549
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930283548}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 185857592}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.84000003}
+  m_AnchoredPosition: {x: 0, y: -46.6}
+  m_SizeDelta: {x: 100, y: 66}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1930283550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930283548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444c2510f8ac8d343945049357ab3c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1930283551
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930283548}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 219.61874, y: 172.54654}
+  m_EdgeRadius: 0
 --- !u!1 &1963870012
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,7 +4884,7 @@ RectTransform:
   m_GameObject: {fileID: 2093238750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.1612499, y: 1.9445313, z: 1}
   m_Children:
   - {fileID: 1502290879}
   m_Father: {fileID: 1337430286}
@@ -4130,7 +4892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -84}
+  m_AnchoredPosition: {x: 2.348, y: -265.13998}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2093238752

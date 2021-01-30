@@ -92,7 +92,7 @@ public class ConcerjeBehaviour : MonoBehaviour
             cloneFound.GetComponent<DragAndDrop>().canvas = canvas;
             cloneFound.SetActive(true);
         }
-        Invoke("InteractionFinish", timeForLastDialogue * 1.5f);
+        Invoke("InteractionFinish", timeForLastDialogue * 2.5f);
     }
 
     public void ReceivingItem(GameObject objetoRecibido) // Este method es para cuando le das un objeto al NPC. Es decir que solo se usa para NPCs de tipo lost item.
