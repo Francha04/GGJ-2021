@@ -9,6 +9,8 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
     [SerializeField] public ItemOrganizer itemOrganizer;
+    [SerializeField] AudioSource sonidoClick;
+    [SerializeField] AudioClip pickSound, dropSound;
 
     private void Awake()
     {
@@ -20,6 +22,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     {
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
+        sonidoClick.PlayOneShot(pickSound);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -37,6 +40,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
         {
             itemOrganizer.OnItemLeaveBox(this);
         }
+        sonidoClick.PlayOneShot(dropSound);
     }
 
     public void OnPointerClick(PointerEventData eventData)
