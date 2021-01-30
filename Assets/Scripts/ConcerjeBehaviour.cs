@@ -86,6 +86,7 @@ public class ConcerjeBehaviour : MonoBehaviour
     void FoundThis()
     {
         dialogBox.text = $"{ chatIntro }";
+        this.GetComponent<AudioSource>().Play();
         foreach (GameObject itemFound in itemsFound) {
             GameObject cloneFound = Instantiate(itemFound);
             cloneFound.transform.SetParent(canvas.transform, false);

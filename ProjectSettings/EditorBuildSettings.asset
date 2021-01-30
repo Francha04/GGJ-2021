@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPrincipal.unity
     guid: 66230b851c3f95e41aa0ed2fff61a1b5
   - enabled: 1
-    path: Assets/Scenes/EscenaDePruebaDeScripts.unity
-    guid: 755607e13313d8e4680607e8e8880185
+    path: Assets/Scenes/Main Game Scene.unity
+    guid: 4fd70ec52804dda4dab228f8d435ad04
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: b64815f7b74a37843bd24276e31be09b
+  - enabled: 1
+    path: Assets/Scenes/Final Malo Game Over Scene.unity
+    guid: e69c426c010270f46a1198438f379e65
+  - enabled: 1
+    path: Assets/Scenes/Final Bueno Game Over.unity
+    guid: 7aa120a2df57088429a3c09366e565d1
   m_configObjects: {}

@@ -26,4 +26,20 @@ public class LevelManager : MonoBehaviour
         //y que la escena este en el build
         SceneManager.LoadScene(name);
     }
+    public void goToMainMenu() 
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void goToCredits() 
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void gameQuit() 
+    {
+        Application.Quit();
+    }
 }

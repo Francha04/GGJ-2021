@@ -22,6 +22,7 @@ public class libroQuejas : MonoBehaviour
     }
     public void spriteChange() 
     {
+        this.gameObject.GetComponent<AudioSource>().Play();
         switch (errores)
         {
             case 1:

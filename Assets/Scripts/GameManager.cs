@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameManager _instance;
     public int amountOfErrors;
-    private int errorsTolerance = 10;
+    private int errorsTolerance = 3;
     public bool playerLostTheGame;
     public GameObject[] NPCs;
     public GameObject Canvas;
@@ -16,8 +17,8 @@ public class GameManager : MonoBehaviour
     public float timeBetweenEvents;
     private int NPCIndex;
     public libroQuejas libroDeQuejas;
-    
-    
+
+
     private void Awake()
     {
         if (_instance == null)
@@ -31,8 +32,16 @@ public class GameManager : MonoBehaviour
         }
         Canvas = FindObjectOfType<Canvas>().gameObject; //Esto se asegura de tener el Canvas de la escena en la variable Canvas;
         NPCIndex = 0;
-        Invoke("startNextEvent", timeBeforeFirstEvent); //Esto summonea al primer NPC despues de cierta cantidad de tiempo, definida por timeBeforeFirstEvent.
-        playerLostTheGame = false;
+        //Invoke("startNextEvent", timeBeforeFirstEvent); //Esto summonea al primer NPC despues de cierta cantidad de tiempo, definida por timeBeforeFirstEvent.
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            ResetStats();
+            Invoke("startNextEvent", timeBeforeFirstEvent); //Esto summonea al primer NPC despues de cierta cantidad de tiempo, definida por timeBeforeFirstEvent.
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+
+        }
     }
 
     public bool CheckIfPlayerLostTheGame()
@@ -44,6 +53,7 @@ public class GameManager : MonoBehaviour
     {
         amountOfErrors = 0;
         playerLostTheGame = false;
+        NPCIndex = 0;
     }
 
     private void Update()
@@ -78,9 +88,23 @@ public class GameManager : MonoBehaviour
     }
     private void startNextEvent() 
     {
-        NPCs[NPCIndex].SetActive(true);
-        print("Ahora mismo deberia estar empezando el evento que involucra al NPC de indice " + NPCIndex + " en el array de GameManager");
-        NPCIndex++;        
+        if (NPCs.Length > NPCIndex)
+        {
+            NPCs[NPCIndex].SetActive(true);
+            print("Ahora mismo deberia estar empezando el evento que involucra al NPC de indice " + NPCIndex + " en el array de GameManager");
+            NPCIndex++;
+        }
+        else 
+        {
+            if (amountOfErrors > errorsTolerance)
+            {
+                SceneManager.LoadScene(3);
+            }
+            else 
+            {
+                SceneManager.LoadScene(4);
+            }
+        }
     }
 
     public void errorCometido() 
