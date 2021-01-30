@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
-
-public class NPCBehaivor : MonoBehaviour
+public class ConcerjeBehaviour : MonoBehaviour
 {
     [SerializeField] Text dialogBox;
     [SerializeField] Canvas canvas;
@@ -27,7 +25,7 @@ public class NPCBehaivor : MonoBehaviour
 
     private int type;
 
-    public GameObject itemFound;
+    public GameObject[] itemsFound;
     public GameObject itemLost;
     int expectedValue; // El valor que espera recibir. Si lo que recibe es del mismo tipo que el objeto que quiere, y tiene mas valor, entonces lo acepta igual.
     //public GameObject wheresLocation;
@@ -88,10 +86,13 @@ public class NPCBehaivor : MonoBehaviour
     void FoundThis()
     {
         dialogBox.text = $"{ chatIntro }";
-        GameObject cloneFound = Instantiate(itemFound);
-        cloneFound.transform.SetParent(canvas.transform, false);
-        cloneFound.GetComponent<DragAndDrop>().canvas = canvas;
-        cloneFound.SetActive(true);
+        foreach (GameObject itemFound in itemsFound) {
+            GameObject cloneFound = Instantiate(itemFound);
+            cloneFound.transform.SetParent(canvas.transform, false);
+            cloneFound.GetComponent<DragAndDrop>().canvas = canvas;
+            cloneFound.SetActive(true);
+        }
+        Invoke("InteractionFinish", timeForLastDialogue * 1.5f);
     }
 
     public void ReceivingItem(GameObject objetoRecibido) // Este method es para cuando le das un objeto al NPC. Es decir que solo se usa para NPCs de tipo lost item.
@@ -107,7 +108,7 @@ public class NPCBehaivor : MonoBehaviour
         {
             dialogBox.text = $"{chatAcceptfraud}";
             gameManager._instance.errorCometido();
-            Invoke("InteractionFinish", timeForLastDialogue);            
+            Invoke("InteractionFinish", timeForLastDialogue);
         }
         else  // Si no era correcto ni era fraude, entonces va el chatWrong.
         {
@@ -156,57 +157,15 @@ public class NPCBehaivor : MonoBehaviour
     {
         print("Finish");
         gameManager.eventEnded();
-        this.gameObject.GetComponent<Animator>().SetTrigger("InteractionOver");        
+        this.gameObject.GetComponent<Animator>().SetTrigger("InteractionOver");
         dialogBox.GetComponent<Animator>().SetTrigger("Fade Out");
         dialogBox.GetComponent<Animator>().ResetTrigger("Fade In");
         Invoke("selfDestroy", timeFadeOut);
     }
-    public void selfDestroy() 
+    public void selfDestroy()
     {
         dialogBox.text = "";
         dialogBox.GetComponent<Animator>().ResetTrigger("Fade Out");
-        Destroy(this.gameObject); 
+        Destroy(this.gameObject);
     }
-
-    /* public void OnDrop(PointerEventData eventData)
-     {
-         if (eventData.pointerDrag != null)
-         {
-             if (eventData.pointerDrag.gameObject == itemLost)
-             {
-
-                 dialogBox.text = $"{ chatCorrect }";
-
-                 Destroy(eventData.pointerDrag.gameObject);
-                 Debug.Log(eventData.pointerDrag.gameObject);
-
-                 dialogBox.text = $"{ chatCorrect }";
-
-                 Destroy(this.gameObject);
-                 //llamar animador y destruir persona
-             }
-             /*else if (eventData.pointerDrag.gameObject.value > itemLost.value)
-                 {
-                     dialogBox.text = $"{chatAcceptfraud}";
-                     gameManager._instance.amountOfErrors++;
-                     Debug.Log(gameManager._instance.amountOfErrors);
-                     Destroy(eventData.pointerDrag.gameObject);
-                     Debug.Log(eventData.pointerDrag.gameObject);
-                     Destroy(this.gameObject);
-                     //llamar animador y destruir persona
-                 }
-             else
-             {
-                 dialogBox.text = $"{ chatWrong }";
-                 gameManager._instance.amountOfErrors++;
-                 Debug.Log(gameManager._instance.amountOfErrors);
-             }
-         }
-     }*/
-
 }
-
-
-
-
-

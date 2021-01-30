@@ -14,6 +14,7 @@ public class DataItem : MonoBehaviour
         Money,
         Purse,
         Key,
-        Watch
+        Watch,
+        Pills
     }
 }

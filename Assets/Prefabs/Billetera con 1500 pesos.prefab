@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1843095450698187654}
   - component: {fileID: -9020446268970726825}
   m_Layer: 5
-  m_Name: Celular Gama Media
+  m_Name: Billetera con 1500 pesos
   m_TagString: Objeto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 510, y: -110}
+  m_AnchoredPosition: {x: 653, y: -665}
   m_SizeDelta: {x: 49.5, y: 63.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5214509413402709958
@@ -72,7 +72,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b67b51a7ae11d314d9130632f4a1136a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 29ece877d664c9a4bbbf63e34efffdc4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -158,10 +158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4954e6ce83e175849b6c6d9d72dac557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
-  descripcion: Un celular de gama Media
-  itemType: 0
-  itemValue: 0
+  id: 14
+  descripcion: Una billetera bastante cargada de dinero.
+  itemType: 1
+  itemValue: 1550
 --- !u!61 &1843095450698187654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -175,7 +175,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.099105835, y: -0.29208374}
+  m_Offset: {x: 0.000045776367, y: 0.66241455}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -186,7 +186,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 48.79654, y: 63.854797}
+  m_Size: {x: 48.95218, y: 60.99695}
   m_EdgeRadius: 0
 --- !u!50 &-9020446268970726825
 Rigidbody2D:

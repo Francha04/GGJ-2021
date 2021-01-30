@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public float timeBeforeFirstEvent;
     public float timeBetweenEvents;
     private int NPCIndex;
+    public libroQuejas libroDeQuejas;
     
     
     private void Awake()
@@ -80,6 +81,12 @@ public class GameManager : MonoBehaviour
         NPCs[NPCIndex].SetActive(true);
         print("Ahora mismo deberia estar empezando el evento que involucra al NPC de indice " + NPCIndex + " en el array de GameManager");
         NPCIndex++;        
-    }   
+    }
+
+    public void errorCometido() 
+    {
+        amountOfErrors++;
+        libroDeQuejas.updateSprite(amountOfErrors);
+    }
 
 }
