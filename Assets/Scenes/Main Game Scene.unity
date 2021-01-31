@@ -1018,7 +1018,7 @@ MonoBehaviour:
   - {fileID: 1296102291}
   textoBotones:
   - "No, ac\xE1 no est\xE1"
-  - "\xBFC\xF3mo la reconocer\xEDa?"
+  - "\xBFC\xF3mo lo reconocer\xEDa?"
   timeFadeOut: 1
   timeForLastDialogue: 5
   paciente: 2
@@ -3570,6 +3570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _instance: {fileID: 746949368}
   amountOfErrors: 0
+  errorsTolerance: 3
   playerLostTheGame: 0
   NPCs:
   - {fileID: 1308112757}
@@ -5473,8 +5474,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 2.348, y: -262.8}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 2.348, y: -257.4}
+  m_SizeDelta: {x: 100, y: 100.58096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1308112759
 MonoBehaviour:
@@ -7182,8 +7183,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 2.348, y: -265.13998}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 2.348, y: -260}
+  m_SizeDelta: {x: 100, y: 102.32391}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2093238752
 MonoBehaviour:

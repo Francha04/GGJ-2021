@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public GameManager _instance;
     public int amountOfErrors;
-    private int errorsTolerance = 5;
+    public int errorsTolerance;
     public bool playerLostTheGame;
     public GameObject[] NPCs;
     public GameObject Canvas;
@@ -99,12 +99,6 @@ public class GameManager : MonoBehaviour
 
     {
         playerLostTheGame = CheckIfPlayerLostTheGame();
-
-        if (playerLostTheGame)
-        {
-            //Cargar escena final ?
-        }
-
     }
     public void eventEnded()   //Este debe ser convocado por otros objetos, cuando el evento con el NPC actual haya terminado, asi despues de cierto tiempo se inicia el siguiente.
     {
