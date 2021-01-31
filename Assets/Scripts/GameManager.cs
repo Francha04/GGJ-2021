@@ -57,15 +57,16 @@ public class GameManager : MonoBehaviour
     }
 
     private void Update()
+
     {
         playerLostTheGame = CheckIfPlayerLostTheGame();
 
-        if(playerLostTheGame)
+        if (playerLostTheGame)
         {
             //Cargar escena final ?
         }
-    }
 
+    }
     public void eventEnded()   //Este debe ser convocado por otros objetos, cuando el evento con el NPC actual haya terminado, asi despues de cierto tiempo se inicia el siguiente.
     {
         Invoke("startNextEvent", timeBetweenEvents);
@@ -73,11 +74,25 @@ public class GameManager : MonoBehaviour
 
     public void Boton1Rechazo() // Este es el metodo para el primer boton de los 4, que siempre va a corresponder con el "No lo tengo".
     {
-        NPCs[NPCIndex - 1].GetComponent<NPCBehaivor>().Noitemfound();
+        if (NPCIndex == 5)
+        {
+            NPCs[NPCIndex - 1].GetComponent<LadronaBehaviour>().Noitemfound();
+        }
+        else
+        {
+            NPCs[NPCIndex - 1].GetComponent<NPCBehaivor>().Noitemfound();
+        }
     }
     public void Boton2Detalles() //Este es el metodo para el segundo boton de los 4, que siempre va a corresponder con el "Pedir detalles
     {
-        NPCs[NPCIndex - 1].GetComponent<NPCBehaivor>().AskForDetails();
+        if (NPCIndex == 5)
+        {
+            NPCs[NPCIndex - 1].GetComponent<LadronaBehaviour>().AskForDetails();
+        }
+        else
+        {
+            NPCs[NPCIndex - 1].GetComponent<NPCBehaivor>().AskForDetails();
+        }
     }
     public void Boton3() //Este es el metodo para el tercer boton de los 4, que todavia no hemos definido para qué se va a usar
     { 
