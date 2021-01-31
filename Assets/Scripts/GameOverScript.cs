@@ -7,7 +7,7 @@ public class GameOverScript : MonoBehaviour
     public LevelManager levelM;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || (Input.GetMouseButtonDown(0))) 
+        if (Input.GetKeyDown(KeyCode.Space)) 
         {
             levelM.goToMainMenu();
         }

@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 73.93, y: 57.80999}
-  m_SizeDelta: {x: 143.86786, y: 36.793144}
+  m_AnchoredPosition: {x: 102.52, y: 61.209984}
+  m_SizeDelta: {x: 201.04886, y: 36.793144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &53716154
 MonoBehaviour:
@@ -826,18 +826,18 @@ MonoBehaviour:
   - {fileID: 395240813}
   - {fileID: 53716152}
   textoBotones:
-  - No lo tengo
-  - Pedir detalles
+  - "No, ac\xE1 no est\xE1"
+  - "\xBFC\xF3mo era la billetera?"
   timeFadeOut: 1
   timeForLastDialogue: 5
   paciente: 2
   itemFound: {fileID: 0}
   itemLost: {fileID: 5214509413402709966, guid: 5b84437fdb887cf4aa420b3b6d425985, type: 3}
-  chatIntro: "Hola\u2026 estoy buscando una billetera, \xBFpuede ser que est\xE9
-    ac\xE1?"
+  chatIntro: "Hola\u2026 estoy buscando una billetera que perd\xED, \xBFpuede ser
+    que est\xE9 ac\xE1?"
   chatDetail: "Es que no es m\xEDa\u2026 es de mi hermano. Carlos se llama... Ehh
     Pedro, Pedro quise decir\u2026"
-  chatDeny: Cagate, ortiba
+  chatDeny: Bue... que tipo mala onda...
   chatCorrect: "\xA1Gracias! No vimo"
   chatAcceptfraud: Sisi era esa, esa misma, exactamente igual. Muchas gracias che.
   chatWrong: Bueno no es una billetera pero me re sirve.
@@ -922,17 +922,17 @@ MonoBehaviour:
   - {fileID: 395240813}
   - {fileID: 53716152}
   textoBotones:
-  - No lo tengo
-  - Pedir Detalles
+  - "No, ac\xE1 no est\xE1"
+  - "\xBFC\xF3mo la reconocer\xEDa?"
   timeFadeOut: 1
   timeForLastDialogue: 5
   paciente: 2
   itemFound: {fileID: 0}
   itemLost: {fileID: 5214509413402709966, guid: 5b84437fdb887cf4aa420b3b6d425985, type: 3}
-  chatIntro: "Buenos d\xEDas, estoy buscando mi billetera, creo que se me cay\xF3
-    en alg\xFAn pasillo por ac\xE1"
-  chatDetail: "Mi documento deber\xEDa est\xE1r adentro, Pedro Alvarez. Unos 100
-    pe ten\xEDa.\n"
+  chatIntro: "Buenos d\xEDas, estoy buscando un fajo de pesos  que ten\xEDa, creo
+    que se me cay\xF3 en alg\xFAn pasillo por ac\xE1"
+  chatDetail: "Deber\xEDa est\xE1r marcado, lo estaba guardando para el gas. Unos
+    100 pe ten\xEDa adentro.\n"
   chatDeny: "Ah bueno perd\xF3n. La debo haber dejado en otro lado.\n"
   chatCorrect: "\xA1Muchas gracias ch\xE9! "
   chatAcceptfraud: "Eeh s\xED era esta, gracias maestro."
@@ -1253,8 +1253,8 @@ MonoBehaviour:
   - {fileID: 395240813}
   - {fileID: 53716152}
   textoBotones:
-  - No lo tengo
-  - Pedir Detalles
+  - No, no lo tengo
+  - "\xBFQu\xE9 modelo era el celu?"
   timeFadeOut: 1
   timeForLastDialogue: 5
   paciente: 2
@@ -1576,7 +1576,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_Offset: {x: 0.16501617, y: 6.792862}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1587,7 +1587,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 219.61874, y: 172.54654}
+  m_Size: {x: 99.33107, y: 172.54654}
   m_EdgeRadius: 0
 --- !u!1 &326601890
 GameObject:
@@ -2032,8 +2032,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 73.93, y: 180.45999}
-  m_SizeDelta: {x: 143.86786, y: 36.793144}
+  m_AnchoredPosition: {x: 102.52, y: 181.6}
+  m_SizeDelta: {x: 201.04886, y: 36.793144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &351772865
 MonoBehaviour:
@@ -2481,8 +2481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 73.93, y: 97.3}
-  m_SizeDelta: {x: 143.86786, y: 36.793144}
+  m_AnchoredPosition: {x: 102.52, y: 100.7}
+  m_SizeDelta: {x: 201.04886, y: 36.793144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395240815
 MonoBehaviour:
@@ -2847,7 +2847,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_Offset: {x: 3.1722107, y: 6.792862}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2858,7 +2858,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 219.61874, y: 172.54654}
+  m_Size: {x: 117.37424, y: 172.54654}
   m_EdgeRadius: 0
 --- !u!1 &473656397
 GameObject:
@@ -2941,8 +2941,8 @@ MonoBehaviour:
   - {fileID: 395240813}
   - {fileID: 53716152}
   textoBotones:
-  - No lo tengo
-  - Pedir detalles
+  - No, no las tenemos
+  - "\xBFC\xF3mo son las llaves?"
   timeFadeOut: 1
   timeForLastDialogue: 5
   paciente: 2
@@ -3626,8 +3626,8 @@ MonoBehaviour:
   - {fileID: 395240813}
   - {fileID: 53716152}
   textoBotones:
-  - No lo tengo
-  - Pedir Detalles
+  - No, no lo tengo flaco
+  - "\xBFQu\xE9 modelo es el celu?"
   timeFadeOut: 1
   timeForLastDialogue: 5
   paciente: 2
@@ -3970,7 +3970,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_Offset: {x: -5.0292206, y: 6.792862}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3981,7 +3981,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 219.61874, y: 172.54654}
+  m_Size: {x: 139.24472, y: 172.54654}
   m_EdgeRadius: 0
 --- !u!1 &1257974292
 GameObject:
@@ -4064,17 +4064,18 @@ MonoBehaviour:
   - {fileID: 395240813}
   - {fileID: 53716152}
   textoBotones:
-  - No lo tengo
-  - Pedir Detalles
+  - "No, ac\xE1 no las tenemos"
+  - "\xBFC\xF3mo eran las pastillas?"
   timeFadeOut: 1
   timeForLastDialogue: 5
   paciente: 2
   itemFound: {fileID: 0}
   itemLost: {fileID: 5214509413402709966, guid: 458c8a3e164210d4d9e25a918f94578c, type: 3}
-  chatIntro: "Hola que tal\u2026 si, me olvid\xE9 unas pastillas\u2026 ahh esas de
-    ah\xED, \xBFme las alcanzas?"
-  chatDetail: "Por supuesto que son m\xEDas, \xBFsino para que vine?"
-  chatDeny: "Bueno\u2026 tal vez sean otras las que perd\xED\u2026"
+  chatIntro: "Hola que tal\u2026 si, me olvid\xE9 unas pastillas\u2026 las tienen
+    que tener ah\xED guardadas... \xBFme las alcanzas?"
+  chatDetail: "Son pastillas de las que se toman, en un frasco deben est\xE1r. Con
+    tapa seguro"
+  chatDeny: "Bueno\u2026 capaz las perd\xED en otro lado\xED\u2026"
   chatCorrect: "\xA1Gracias!"
   chatAcceptfraud: "ERROR.\t"
   chatWrong: Pero esto no son pastillas...
@@ -4515,8 +4516,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 73.93, y: 138.26999}
-  m_SizeDelta: {x: 143.86786, y: 36.793144}
+  m_AnchoredPosition: {x: 102.52, y: 140.5}
+  m_SizeDelta: {x: 201.04886, y: 36.793144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296102293
 MonoBehaviour:
@@ -5650,7 +5651,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_Offset: {x: -2.0220394, y: 6.792862}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5661,7 +5662,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 219.61874, y: 172.54654}
+  m_Size: {x: 101.51811, y: 172.54654}
   m_EdgeRadius: 0
 --- !u!1 &1832466028
 GameObject:
@@ -5725,7 +5726,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_Offset: {x: 3.4455795, y: 6.792862}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5736,7 +5737,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 219.61874, y: 172.54654}
+  m_Size: {x: 117.920975, y: 172.54654}
   m_EdgeRadius: 0
 --- !u!1 &1861577216
 GameObject:
@@ -5927,7 +5928,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0220184, y: 6.792862}
+  m_Offset: {x: 1.8053055, y: 4.969734}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5938,7 +5939,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 219.61874, y: 172.54654}
+  m_Size: {x: 123.388596, y: 176.1928}
   m_EdgeRadius: 0
 --- !u!1 &1963870012
 GameObject:
@@ -6107,8 +6108,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 136}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 111.9}
+  m_SizeDelta: {x: 100, y: 106.649506}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070725135
 MonoBehaviour:
@@ -6211,8 +6212,8 @@ MonoBehaviour:
   - {fileID: 395240813}
   - {fileID: 53716152}
   textoBotones:
-  - '"No lo tengo"'
-  - Pedir detalles
+  - "\"No se\xF1ora no lo tengo\""
+  - "\"\xBFC\xF3mo es el reloj?\""
   timeFadeOut: 1.5
   timeForLastDialogue: 5
   paciente: 2
