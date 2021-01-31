@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JugadorEntregaObjeto : MonoBehaviour
+public class JugadorEntregaLadronObjeto : MonoBehaviour
 {
     int IDOfItem;
     float timeBeforeCheck;
     private void Start()
     {
-        IDOfItem = GetComponentInParent<NPCBehaivor>().itemLost.GetComponent<DataItem>().id;
+        IDOfItem = GetComponentInParent<LadronaBehaviour>().itemLost.GetComponent<DataItem>().id;
     }
     private void OnTriggerEnter2D(Collider2D collision) //Entra algo en el collider
     {
         if (collision.gameObject.CompareTag("Objeto"))  //Chequeamos si es un objeto.
         {
-            GetComponentInParent<NPCBehaivor>().ReceivingItem(collision.gameObject);
+            GetComponentInParent<LadronaBehaviour>().ReceivingItem(collision.gameObject);
         }
     }
 }

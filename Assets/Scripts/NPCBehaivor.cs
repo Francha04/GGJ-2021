@@ -141,7 +141,7 @@ public class NPCBehaivor : MonoBehaviour
         if (itemLost != null)
         {
             gameManager._instance.errorCometido();
-            Debug.Log("Ahora mismo el jugador tiene " + gameManager._instance.amountOfErrors + " errores.");
+            
         }
         foreach (GameObject objects in buttons)
         {

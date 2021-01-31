@@ -142,8 +142,7 @@ public class ConcerjeBehaviour : MonoBehaviour
         dialogBox.text = $"{ chatDeny }";
         if (itemLost != null)
         {
-            gameManager._instance.errorCometido();
-            Debug.Log("Ahora mismo el jugador tiene " + gameManager._instance.amountOfErrors + " errores.");
+            gameManager._instance.errorCometido();     
         }
         foreach (GameObject objects in buttons)
         {
@@ -156,7 +155,6 @@ public class ConcerjeBehaviour : MonoBehaviour
 
     public void InteractionFinish()  //Esto se llama cuando la interaccion finalizó.
     {
-        print("Finish");
         gameManager.eventEnded();
         this.gameObject.GetComponent<Animator>().SetTrigger("InteractionOver");
         dialogBox.GetComponent<Animator>().SetTrigger("Fade Out");

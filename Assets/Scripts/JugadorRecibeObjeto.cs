@@ -15,7 +15,6 @@ public class JugadorRecibeObjeto : MonoBehaviour
         if (collision.gameObject.CompareTag("Objeto") && collision.gameObject.GetComponent<DataItem>().id == IDOfItem) 
         {
             GetComponentInParent<NPCBehaivor>().InteractionFinish();
-            print("Objeto se fue");
             this.gameObject.SetActive(false);            
         }
     }

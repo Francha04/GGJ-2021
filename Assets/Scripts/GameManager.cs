@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public GameManager _instance;
     public int amountOfErrors;
-    private int errorsTolerance = 3;
+    private int errorsTolerance = 5;
     public bool playerLostTheGame;
     public GameObject[] NPCs;
     public GameObject Canvas;
@@ -63,7 +63,6 @@ public class GameManager : MonoBehaviour
         if(playerLostTheGame)
         {
             //Cargar escena final ?
-            Debug.Log("Perdiste");
         }
     }
 
@@ -91,7 +90,6 @@ public class GameManager : MonoBehaviour
         if (NPCs.Length > NPCIndex)
         {
             NPCs[NPCIndex].SetActive(true);
-            print("Ahora mismo deberia estar empezando el evento que involucra al NPC de indice " + NPCIndex + " en el array de GameManager");
             NPCIndex++;
         }
         else 
@@ -112,5 +110,4 @@ public class GameManager : MonoBehaviour
         amountOfErrors++;
         libroDeQuejas.updateSprite(amountOfErrors);
     }
-
 }

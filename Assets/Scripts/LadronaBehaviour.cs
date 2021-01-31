@@ -141,7 +141,7 @@ public class LadronaBehaviour : MonoBehaviour
         dialogBox.text = $"{ chatDeny }";
         if (itemLost != null)
         {
-            Debug.Log("Ahora mismo el jugador tiene " + gameManager._instance.amountOfErrors + " errores.");
+            
         }
         foreach (GameObject objects in buttons)
         {
