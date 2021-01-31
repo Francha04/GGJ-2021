@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1843095450698187654}
   - component: {fileID: -9020446268970726825}
   - component: {fileID: -219636011366980089}
+  - component: {fileID: 7656612597036784933}
   m_Layer: 5
   m_Name: Celular Gama Baja
   m_TagString: Objeto
@@ -42,8 +43,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 630, y: -608}
-  m_SizeDelta: {x: 52.12155, y: 65.895645}
+  m_AnchoredPosition: {x: 598.2, y: -592.5}
+  m_SizeDelta: {x: 57.7, y: 75.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5214509413402709958
 CanvasRenderer:
@@ -179,7 +180,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.078948975, y: -0.5549774}
+  m_Offset: {x: 0.078948975, y: -0.17211151}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -190,7 +191,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 48.673767, y: 63.39795}
+  m_Size: {x: 57.480896, y: 75.65105}
   m_EdgeRadius: 0
 --- !u!50 &-9020446268970726825
 Rigidbody2D:
@@ -309,3 +310,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &7656612597036784933
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5214509413402709966}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 815a910546398494fafb57dc37f3f298, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

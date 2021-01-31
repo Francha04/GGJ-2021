@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1843095450698187654}
   - component: {fileID: -9020446268970726825}
   - component: {fileID: -4886820508193182201}
+  - component: {fileID: 2781639208944745843}
   m_Layer: 5
   m_Name: Celular Gama Media
   m_TagString: Objeto
@@ -42,7 +43,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 739, y: -615}
+  m_AnchoredPosition: {x: 418, y: -594}
   m_SizeDelta: {x: 52.12155, y: 65.895645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5214509413402709958
@@ -162,10 +163,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4954e6ce83e175849b6c6d9d72dac557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  id: 11
   descripcion: Un celular de gama Media
   itemType: 0
-  itemValue: 0
+  itemValue: 500
 --- !u!61 &1843095450698187654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -309,3 +310,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &2781639208944745843
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5214509413402709966}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba3362e0a554758478450a1a88c289e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
