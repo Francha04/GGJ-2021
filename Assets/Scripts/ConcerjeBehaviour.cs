@@ -160,6 +160,7 @@ public class ConcerjeBehaviour : MonoBehaviour
         dialogBox.GetComponent<Animator>().SetTrigger("Fade Out");
         dialogBox.GetComponent<Animator>().ResetTrigger("Fade In");
         Invoke("selfDestroy", timeFadeOut);
+        gameManager.InvokeTutorialCaja();
     }
     public void selfDestroy()
     {

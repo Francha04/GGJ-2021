@@ -17,7 +17,11 @@ public class GameManager : MonoBehaviour
     public float timeBetweenEvents;
     private int NPCIndex;
     public libroQuejas libroDeQuejas;
-
+    public GameObject textoDragAndDrop;
+    public GameObject textoDialogos;
+    public GameObject textoCaja;
+    public GameObject button1Tutorial;
+    public GameObject button2Tutorial;
 
     private void Awake()
     {
@@ -36,14 +40,49 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             ResetStats();
-            Invoke("startNextEvent", timeBeforeFirstEvent); //Esto summonea al primer NPC despues de cierta cantidad de tiempo, definida por timeBeforeFirstEvent.
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 3)
-        {
-
+            Invoke("StartTutorial", 3f);  // Empieza el tutorial.
         }
     }
 
+
+    //Tutorial
+    public void StartTutorial() 
+    {
+        textoDragAndDrop.SetActive(true);
+    }
+
+    public void TutorialDialogue()
+    {
+        textoDragAndDrop.GetComponent<Animator>().SetTrigger("InteractionOver");
+        Destroy(textoDragAndDrop, 1f);
+        textoDialogos.SetActive(true);
+        button1Tutorial.GetComponentInChildren<Text>().text = "Okas dokas";
+        button1Tutorial.GetComponent<Button>().interactable = true;
+        button2Tutorial.GetComponentInChildren<Text>().text = "No entendí (?)";
+        button2Tutorial.GetComponent<Button>().interactable = true;
+    }
+
+    public void InvokeTutorialCaja() 
+    {
+        Invoke("TutorialCaja", 2f);
+    }
+    public void TutorialCaja() 
+    {
+        textoCaja.SetActive(true);
+        Destroy(textoCaja, 6f);
+    }
+    public void TutorialComplete() 
+    {
+        textoDialogos.GetComponent<Animator>().SetTrigger("InteractionOver");
+        Destroy(textoDialogos, 1f);
+        button1Tutorial.SetActive(false);
+        button2Tutorial.SetActive(false);
+        botones[0].SetActive(true);      
+        botones[1].SetActive(true);
+        Invoke("startNextEvent", timeBeforeFirstEvent); //Esto summonea al primer NPC despues de cierta cantidad de tiempo, definida por timeBeforeFirstEvent.
+    }
+
+    
     public bool CheckIfPlayerLostTheGame()
     {
         return amountOfErrors >= errorsTolerance;
