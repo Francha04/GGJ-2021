@@ -1028,7 +1028,8 @@ MonoBehaviour:
     que se me cay\xF3 en alg\xFAn pasillo por ac\xE1."
   chatDetail: "Deber\xEDa est\xE1r marcado, lo estaba guardando para el gas. Unos
     100 pe ten\xEDa adentro.\n"
-  chatDeny: "Ah bueno perd\xF3n. La debo haber dejado en otro lado.\n"
+  chatDeny: "Pero estoy seguro que las perd\xED estando ac\xE1. No puede ser esto
+    che..."
   chatCorrect: "\xA1Muchas gracias ch\xE9! "
   chatAcceptfraud: "Eeh s\xED era esta, gracias maestro."
   chatWrong: "No chab\xF3n, \xBFqu\xE9 me diste?"
@@ -3358,10 +3359,11 @@ MonoBehaviour:
   itemLost: {fileID: 5214509413402709966, guid: 920e7244ca7e1d946b7fa341f04dab50, type: 3}
   chatIntro: "Que onda\u2026 che me parece que dej\xE9 las llaves de mi vieja ac\xE1
     jajaja, \xBFpuede ser que la tengan ustedes?\t"
-  chatDetail: Son unas llaves de un autito. Onda un llavero con una sola llave. Fijate
-    bien.
-  chatDeny: Bueno... las debo haber dejado en otro lado, o me las re afanaron...
-  chatCorrect: Uhh gracias wachin, me salvaste la vida.
+  chatDetail: "Son unas llaves de un autito. Onda un llavero con una sola llave.
+    Fijate bien que tienen que est\xE1r."
+  chatDeny: "No puede ser. Tienen que haber quedado ac\xE1. And\xE1 vos a pedirle
+    perd\xF3n a mi vieja.\n"
+  chatCorrect: Uh gracias wachin, me salvaste la vida.
   chatAcceptfraud: ERROR
   chatWrong: "No flaco... cualquier cosa me est\xE1s dando... Dej\xE1..."
 --- !u!114 &598043815
